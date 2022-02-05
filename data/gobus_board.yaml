@@ -1,7 +1,15 @@
 
 path: ../datasets/gobus_board # dataset root dir
-train: images  # train images (relative to 'path') 128 images
-val: images  # val images (relative to 'path') 128 images
+train: [
+    220204A/images,
+    220204B/images,
+    220205A/images
+]  # train images (relative to 'path') 128 images
+val: [
+    220204A/images,
+    220204B/images,
+    220205A/images
+]   # val images (relative to 'path') 128 images
 test:  # test images (optional)
 
 # Classes
@@ -12,3 +20,4 @@ names: ['board']  # class names
 #download: https://ultralytics.com/assets/coco128.zip
 
 # python train.py --img 640 --batch 24 --workers=1 --epochs 10000 --data gobus_board.yaml --weights yolov5n.pt --patience 0
+# python train.py --img 640 --batch 2 --workers=1 --epochs 10000 --data gobus_board.yaml --weights yolov5n.pt --patience 0
