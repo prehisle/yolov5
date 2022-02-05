@@ -34,6 +34,8 @@ except (ImportError, AssertionError):
     wandb = None
 
 
+wandb = None
+
 class Loggers():
     # YOLOv5 Loggers class
     def __init__(self, save_dir=None, weights=None, opt=None, hyp=None, logger=None, include=LOGGERS):
